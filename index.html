@@ -4,31 +4,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./сss/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Timer</title>
   </head>
   <body>
-    <h1 class="title">New Year Countdown</h1>
     <div class="timer" id="timer-1">
-      <div class="field">
-        <span class="value" data-value="days"></span>
-        <span class="label">Days</span>
-      </div>
+      <h1 class="title">Time Countdown</h1>
+      <input type="datetime-local" id="date" name="date" class="date-input" />
+      <div class="timer-body">
+        <div class="field">
+          <span class="value" data-value="days">00</span>
+          <span class="label">Days</span>
+        </div>
 
-      <div class="field">
-        <span class="value" data-value="hours"></span>
-        <span class="label">Hours</span>
-      </div>
+        <div class="field">
+          <span class="value" data-value="hours">00</span>
+          <span class="label">Hours</span>
+        </div>
 
-      <div class="field">
-        <span class="value" data-value="mins"></span>
-        <span class="label">Minutes</span>
-      </div>
+        <div class="field">
+          <span class="value" data-value="mins">00</span>
+          <span class="label">Minutes</span>
+        </div>
 
-      <div class="field">
-        <span class="value" data-value="secs"></span>
-        <span class="label">Seconds</span>
+        <div class="field">
+          <span class="value" data-value="secs">00</span>
+          <span class="label">Seconds</span>
+        </div>
       </div>
+      <ul class="buttons">
+        <li class="buttons_item"><button type="button" data-action="start">Start</button></li>
+        <li class="buttons_item"><button type="button" data-action="stop">Stop</button></li>
+        <li class="buttons_item"><button type="button" data-action="reset">Reset</button></li>
+      </ul>
     </div>
     <script src="./js/timer.js" type="module"></script>
   </body>

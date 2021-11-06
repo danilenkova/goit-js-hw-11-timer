@@ -1,0 +1,14 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #5f2c82;
+  //   background: linear-gradient(to right, #49a09d, #5f2c82);
+  background: radial-gradient(ellipse at center, #0a2e38 0%, #000000 70%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  background-size: 100%;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 0 20px rgb(31, 6, 6);
+}
