@@ -56,6 +56,10 @@ class CountdownTimer {
       this.timerData(time);
       if (time < 0) {
         this.stopTimer(this.refs.timerId);
+        this.refs.days.textContent = '00';
+        this.refs.hours.textContent = '00';
+        this.refs.mins.textContent = '00';
+        this.refs.secs.textContent = '00';
       }
     }, 1000);
   }
